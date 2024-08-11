@@ -1,0 +1,342 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px; /* Adjust this value to increase the logo size */
+    height: auto;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #f57c00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* About Section */
+.about, .contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info, .footer-social, .footer-contact {
+    margin-bottom: 1rem;
+}
+
+.footer-info p, .footer-contact h4, .footer-social h4 {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info p, .footer-info a, .footer-contact a {
+    color: #f57c00;
+    text-decoration: none;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2, .contact-form p, .contact-form label {
+    margin-bottom: 1rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #f57c00;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e64a19;
+}
+
+/* Home Page Specific Styles */
+.intro, .about-us, .opening-hours, .follow-us, .find-us, .google-reviews {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.intro h2, .about-us h2, .opening-hours h2, .follow-us h2, .find-us h2, .google-reviews h2 {
+    margin-bottom: 1rem;
+}
+
+.intro p, .about-us p, .follow-us p, .google-reviews p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+/* Centrage et redimensionnement de l'image des heures d'ouverture */
+.opening-hours-img {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement si nécessaire */
+    margin: 0 auto;
+    max-width: 50%; /* Réduisez ce pourcentage pour une image plus petite */
+    height: auto;
+    border-radius: 8px;
+}
+
+
+
+
+/* TikTok Links Section */
+.tiktok-links {
+    margin-bottom: 1rem;
+}
+
+.tiktok-links a {
+    display: block;
+    color: #f57c00;
+    text-decoration: none;
+    margin: 0.5rem 0;
+}
+
+.tiktok-links a:hover {
+    text-decoration: underline;
+}
+
+/* TikTok Videos Section */
+.tiktok-videos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.tiktok-video {
+    text-align: center;
+}
+
+.tiktok-video a {
+    display: block;
+    margin-bottom: 0.5rem; /* Espace entre le texte et l'image */
+    color: #f57c00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.tiktok-video a:hover {
+    text-decoration: underline;
+}
+
+.tiktok-video img {
+    max-width: 100%;
+    height: auto;
+    width: 250px; /* Ajustez cette valeur selon vos besoins */
+    border-radius: 8px;
+}
+
+
+
+/* Map Container */
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Carousel Styles for Reviews */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.review {
+    flex: 0 0 100%; /* Chaque avis occupe 100% de la largeur du carrousel */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 0; /* Pas de marge pour éviter les chevauchements */
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+
+
+/* Google Reviews Section */
+.google-reviews {
+    max-width: 1200px;
+    margin: 1rem auto !important; /* Ajout de !important pour prioriser */
+    padding: 1rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* page produits */
+.produit-info {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    bottom: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    text-align: left;
+}
+.produit:hover .produit-info {
+    display: block;
+}
+.produits-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.produit {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+.produit img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+.produit:hover img {
+    opacity: 0.7;
+}
